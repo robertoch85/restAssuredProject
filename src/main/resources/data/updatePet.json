@@ -1,0 +1,18 @@
+{
+  "id": 555454,
+  "category": {
+    "id": 0,
+    "name": "Perro"
+  },
+  "name": "Chucho",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "Mediano"
+    }
+  ],
+  "status": "available"
+}
