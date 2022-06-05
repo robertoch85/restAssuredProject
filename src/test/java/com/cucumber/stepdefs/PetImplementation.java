@@ -42,11 +42,6 @@ public class PetImplementation {
 
     @And("the details of the pet has been added")
     public void theDetailsOfThePetHasBeenAdded() {
-        //HashMap<String, String> bodyRequestMap = new HashMap<>();
-        //bodyRequestMap.put("id", "555333");
-        //bodyRequestMap.put("name", "Peludo");
-        //bodyRequestMap.put("status", "pending");
-        //addPet = given().contentType(ContentType.JSON).body(bodyRequestMap).post("/v2/pet");
 
         File addPetFile = new File ("src/main/resources/data/addPet.json");
 
@@ -56,9 +51,6 @@ public class PetImplementation {
 
     @Then("the body response contains the key id")
     public void theBodyResponseContainsTheIdOfThePetCreated() {
-        //JsonPath jsonPathPets = new JsonPath(addPet.body().asString());
-        //String jsonPets=jsonPathPets.getString("id");
-        //assertEquals("The value of the name is not the same", id, jsonPets);
 
         addPet.then().body("$",hasKey("id"));
     }

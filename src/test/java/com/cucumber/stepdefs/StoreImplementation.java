@@ -35,9 +35,6 @@ public class StoreImplementation {
 
         Response responseInventory = given().baseUri("https://petstore.swagger.io/v2/store/inventory").get();
 
-        //File getInventoryTotal = new File ("src/main/resources/data/getInventoryTotal.json");
-        //getInventory = given().contentType(ContentType.JSON).body(getInventoryTotal).put("/v2/store/inventory");
-        //getInventoryPage = given().contentType(ContentType.JSON).get("/v2/store/inventory");
         return  responseInventory;
     }
 
