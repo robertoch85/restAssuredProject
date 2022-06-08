@@ -140,8 +140,6 @@ public class UserImplementation {
 
     @Given("the user logs out")
     public void theUserLogsOut() {
-        //theDetailsOfUserHasBeenAdded();
-        //logoutUser = given().contentType(ContentType.JSON).get("/v2/user/"+param);
 
         logoutUser = given().baseUri("https://petstore.swagger.io/v2/user/logout").get();
 
